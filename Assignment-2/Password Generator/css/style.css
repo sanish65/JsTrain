@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body{
+  background-image: url(https://st2.depositphotos.com/1203257/6428/i/950/depositphotos_64285275-stock-photo-online-secure-connection.jpg);
+  background-size: cover;
+}
+
+.pass-settings .options .option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: calc(100% / 2);
+  }
+
+ .main{
+  background-color: aquamarine;
+  opacity: 80%;
+  border-radius: 20px;
+  text-align:center; 
+  padding:50px 5px; 
+  margin:200px 600px; 
+  box-shadow: 0 4px 80px 0 rgba(18, 20, 1, 0.2);
+ }
+ .main .show{
+    position: relative;
+    margin-top: 0.75rem;
+    border-radius: 25px;
+  }
+  .show::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 0.3s ease;
+  }
+  .show#weak::before{
+    content: "Too weak";
+  }
+  .show#medium::before{
+    content: "medium";
+
+  }
+  .show#strong::before{
+    content:"strong"
+  }
+  .show#error::before{
+    content:"Error: Too small length"
+  }

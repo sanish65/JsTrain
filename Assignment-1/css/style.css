@@ -1,0 +1,6 @@
+.card:hover{
+    box-shadow: 0 4px 80px 0 rgba(216, 238, 16, 0.2);
+}
+button:hover, a:hover {
+    opacity: 0.20;
+}
